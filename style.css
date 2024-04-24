@@ -1,0 +1,82 @@
+body {
+    font-family: "Didact Gothic", sans-serif;
+    background-color: hsla(30, 98%, 75%, 0.895);
+}
+
+.container {
+    background: linear-gradient(45deg, #c02909 39%, #fcb045 100%);
+    padding: 40px;
+    max-width: 300px;
+    margin: 50px auto;
+    border-radius: 30px;
+    outline: 10px solid #c02909;
+    box-shadow: 30px 30px 50px #fcb045;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    height: 80px;
+    text-align: right;
+    border: none;
+    background-color: #ffcc0093;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    color: #e34800;
+    font-size: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: 5px solid #c02909;
+}
+
+button {
+    background: #921800a5;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #e9be11;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #691200a5;
+    border: 4px solid #921800a5;
+}
+
+button:hover {
+    background-color: #e9be1171;
+}
+
+button:active {
+    background-color: #c02909;
+}
+
+.operator-btn {
+    color: #921800; /* Darker shade for visibility */
+    background: #ffcc00; /* Background color changed to a brighter shade for contrast */
+}
+
+.operator-btn:hover {
+    background-color: #ff0000; /* Red on hover */
+}
+
+.operator-btn:active {
+    background-color: #c02909; /* Deeper red on active */
+}
+
+.operator-delete-btn, .operator-all-delete-btn {
+    color: #e9be11;
+    background: #ff6b01db;  /* Orange background for clear buttons */
+}
+
+.operator-delete-btn:hover, .operator-all-delete-btn:hover {
+    background-color: #ff000071; /* Lighter red for hover */
+}
+
+.operator-delete-btn:active, .operator-all-delete-btn:active {
+    background-color: #c02909; /* Deeper red on active */
+}
